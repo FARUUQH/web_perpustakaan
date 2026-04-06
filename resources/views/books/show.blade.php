@@ -11,7 +11,7 @@
         <div class="">
             @if ($book->cover_image)
                 <img src="{{ asset('storage/' . $book->cover_image) }}" alt="{{ $book->title }} cover"
-                    class="book-detail-cover">
+                    class="detail-cover">
             @else
                 <div class="detail-cover-placeholder">
                     <span class="icon">📖</span>

@@ -21,5 +21,5 @@ Route::middleware('auth')->group(function () {
     Route::post('/my-books/store', [MyBookController::class, 'store'])->name('my-books.store');
     Route::get('/my-books/{myBook}/edit', [MyBookController::class, 'edit'])->name('my-books.edit');
     Route::put('/my-books/{myBook}', [MyBookController::class, 'update'])->name('my-books.update');
-    Route::delete('/my-books/{myBook}', [MyBookController::class, 'destroy'])->name('my-books.destroy')->middleware('can:delete,myBook');
+    Route::delete('/my-books/{myBook}', [MyBookController::class, 'destroy'])->name('my-books.destroy');
 });

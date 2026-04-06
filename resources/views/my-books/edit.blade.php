@@ -53,7 +53,7 @@
                     <label for="cover_image">Gambar Sampul Saat Ini</label>
                     @if ($book->cover_image)
                         <div class="cover-preview-wrapper">Gambar saat ini:</div>
-                        <img src="{{ Storage::url($book->cover_image) }}" alt="Cover" class="Cover-preview">
+                        <img src="{{ Storage::url($book->cover_image) }}" alt="cover" class="cover-preview">
                         @else
                             <div class="cover-empty">Tidak ada gambar sampul</div>
                         @endif
